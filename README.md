@@ -16,7 +16,7 @@ No proxies, no captchas.
 pip install google-images-api
 ```
 
-Requires Python 3.8 or newer.
+Requires Python 3.10 or newer.
 
 ## Quickstart
 
