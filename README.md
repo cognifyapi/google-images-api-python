@@ -1,5 +1,10 @@
 # google-images-api by cognifyapi
 
+[![PyPI version](https://img.shields.io/pypi/v/google-images-api.svg)](https://pypi.org/project/google-images-api/)
+[![Python versions](https://img.shields.io/pypi/pyversions/google-images-api.svg)](https://pypi.org/project/google-images-api/)
+[![License: MIT](https://img.shields.io/pypi/l/google-images-api.svg)](https://github.com/cognifyapi/google-images-api-python/blob/main/LICENSE)
+
+
 A small Python client for the [CognifyAPI Google Images API](https://cognifyapi.com/google-images).
 Search Google Images and get structured JSON back: image URLs, plus width, height and MIME type with JSON results.
 
@@ -123,12 +128,21 @@ Example API response:
 }
 ```
 
+## Development
+
+```bash
+git clone https://github.com/cognifyapi/google-images-api-python.git
+cd google-images-api-python
+pip install -e ".[dev]"
+pytest
+```
+
 ## Links
 
 - [API documentation](https://cognifyapi.com/docs/google-images-docs)
 - [Google Images API](https://cognifyapi.com/google-images)
 - [CognifyAPI](https://cognifyapi.com/)
-- [Report an issue](https://github.com/cognifyapi/google-images-api/issues)
+- [Report an issue](https://github.com/cognifyapi/google-images-api-python/issues)
 
 ## License
 
