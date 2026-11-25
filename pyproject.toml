@@ -1,0 +1,60 @@
+[build-system]
+requires = ["hatchling>=1.18"]
+build-backend = "hatchling.build"
+
+[project]
+name = "google-images-api"
+dynamic = ["version"]
+description = "Python client for the CognifyAPI Google Images API: search Google Images and get image URLs, sizes and MIME types as JSON."
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "CognifyAPI", email = "support@cognifyapi.com" }]
+keywords = [
+  "google images api",
+  "google image search",
+  "image search api",
+  "image scraper",
+  "web scraping",
+  "serp api",
+  "cognifyapi",
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Internet :: WWW/HTTP :: Indexing/Search",
+  "Topic :: Multimedia :: Graphics",
+  "Typing :: Typed",
+]
+dependencies = ["requests>=2.28"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "build", "twine"]
+
+[project.scripts]
+google-images-api = "google_images_api.cli:main"
+
+[project.urls]
+Homepage = "https://cognifyapi.com/google-images"
+Documentation = "https://cognifyapi.com/docs/google-images-docs"
+Source = "https://github.com/cognifyapi/google-images-api"
+Issues = "https://github.com/cognifyapi/google-images-api/issues"
+
+[tool.hatch.version]
+path = "src/google_images_api/__init__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/google_images_api"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
