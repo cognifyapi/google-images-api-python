@@ -1,12 +1,7 @@
-# google-images-api
-
-[![PyPI version](https://img.shields.io/pypi/v/google-images-api.svg)](https://pypi.org/project/google-images-api/)
-[![Python versions](https://img.shields.io/pypi/pyversions/google-images-api.svg)](https://pypi.org/project/google-images-api/)
-[![License: MIT](https://img.shields.io/pypi/l/google-images-api.svg)](https://github.com/cognifyapi/google-images-api/blob/main/LICENSE)
+# google-images-api by cognifyapi
 
 A small Python client for the [CognifyAPI Google Images API](https://cognifyapi.com/google-images).
-Search Google Images and get structured JSON back: image URLs, plus width, height and MIME type.
-No proxies, no captchas.
+Search Google Images and get structured JSON back: image URLs, plus width, height and MIME type with JSON results.
 
 **[Get an API key (free trial)](https://studio.cognifyapi.com/)**
 
